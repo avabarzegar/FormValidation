@@ -1,0 +1,48 @@
+/* Adding styles to the form  */
+
+body, html{
+    box-sizing: border-box;
+}
+
+.warning{
+    color: red;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.boxWarning{
+    border:1px solid red;
+}
+
+form{
+    padding: 10px;
+}
+form button{
+    padding: 8px 1rem;
+    border: none;
+    border-radius: 5px;
+}
+form button[type=submit]{
+background-color:blue;
+color: white;
+}
+
+form button[type=reset]{
+    background-color: red;
+    color: white;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+}
+
+.textfield input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #808080;
+}
+
+.textfield label{
+    margin-bottom: 10px;
+}
