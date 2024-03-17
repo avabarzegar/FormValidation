@@ -32,7 +32,6 @@ let errorElm = [emailError, nameError, passwordError, password2Error];
 errorElm.map((item,index)=>{
     item.setAttribute('class', 'warning');
     document.querySelectorAll('.textfield')[index].appendChild(item);
-    // document.querySelectorAll('.textfield')[index].classList.add('boxWarning');
 })
 
 // set a warning class attribute on terms and condition paragraph
@@ -102,7 +101,7 @@ function validateEmail() {
     if (regexp.test(email) && email.trim().length > 0) {
         error = defaultMsg;
     } else {
-        error = "Email address should be non-empty with the format (xyx@xyz.xyz).";
+        error = "\u2716 Email address should be non-empty with the format (xyx@xyz.xyz).";
     }
     return error;
 } 
@@ -115,7 +114,7 @@ function validateName() {
     if (regexp.test(name) && 0 < name.trim().length < 30) {
         error = defaultMsg;
     } else {
-        error = "User name should be non-empty and within 30 characters long";
+        error = "\u2716 User name should be non-empty and within 30 characters long";
     }
     return error;
 }
@@ -129,7 +128,7 @@ function validatePassword() {
     if (regexp.test(password) && password.trim().length >= 8) {
         error = defaultMsg;
     } else {
-        error = "Your password should be at least 8 characters: 1 uppercase, 1 lowercase.";
+        error = "\u2716 Your password should be at least 8 characters: 1 uppercase, 1 lowercase.";
     }
     return error;
 }
@@ -143,7 +142,7 @@ function checkPassword() {
     if (pass1 === pass2 && pass2.length > 0) {
         error = defaultMsg;
     } else {
-        error = "Passwords don't match.";
+        error = "\u2716 Passwords don't match.";
     }
     return error;
 }
@@ -153,7 +152,7 @@ function validateTerms() {
     if (termInput.checked) {
         return defaultMsg;
     } else {
-        return "Please accept the terms and conditions";
+        return "\u2716 Please accept the terms and conditions";
     }
 }
 

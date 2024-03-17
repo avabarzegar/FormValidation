@@ -7,7 +7,6 @@ body, html{
 .warning{
     color: red;
     margin-bottom: 10px;
-    display: block;
 }
 
 .boxWarning{
@@ -30,6 +29,7 @@ color: white;
 form button[type=reset]{
     background-color: red;
     color: white;
+    margin-top: 1rem;
 }
 
 .textfield{
@@ -46,3 +46,9 @@ form button[type=reset]{
 .textfield label{
     margin-bottom: 10px;
 }
+
+.checkbox label:nth-child(2) {
+    margin-right: 2rem;
+   
+}
+
