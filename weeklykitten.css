@@ -1,0 +1,54 @@
+/* Adding styles to the form  */
+
+body, html{
+    box-sizing: border-box;
+}
+
+.warning{
+    color: red;
+    margin-bottom: 10px;
+}
+
+.boxWarning{
+    border:1px solid red;
+}
+
+form{
+    padding: 10px;
+}
+form button{
+    padding: 8px 1rem;
+    border: none;
+    border-radius: 5px;
+}
+form button[type=submit]{
+background-color:blue;
+color: white;
+}
+
+form button[type=reset]{
+    background-color: red;
+    color: white;
+    margin-top: 1rem;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+}
+
+.textfield input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #808080;
+}
+
+.textfield label{
+    margin-bottom: 10px;
+}
+
+.checkbox label:nth-child(2) {
+    margin-right: 2rem;
+   
+}
+
